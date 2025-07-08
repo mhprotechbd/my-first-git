@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Module 4 Task Two</title>
+  <style>
+    .container {
+      display: flex;
+      flex-direction: column;
+      width: 80%;
+      margin: 0 auto;
+    }
+
+    h2 {
+      text-align: center;
+    }
+
+    .animal-section {
+      margin: 10px 0;
+      padding: 10px;
+      width: 100%; 
+    }
+
+    .animal-image img {
+      width: 100%;
+      height: auto;
+      margin-top: 10px;
+      border-radius: 4px;
+    }
+
+    .animal-image a {
+      text-decoration: none;
+      color: blue;
+      display: block;
+      margin-top: 8px;
+    }
+
+    .feedback-form {
+      margin-top: 10px;
+      padding: 5px;
+      border-radius: 8px;
+      width: 100%; 
+    }
+
+    .feedback-form label {
+      display: block;
+      margin-top: 8px;
+    }
+
+    .feedback-form input[type="submit"] {
+      margin-top: 20px;
+      display: block;
+    }
+  </style>
+
+</head>
+<body>
+  <header>
+    <h2>Module 4 Task Two</h2>
+  </header>
+  <main>
+    <div class="container">
+
+      <!-- Animal sffection -->
+      <section class="animal-section">
+        <label for="searchAnimal">Search for an animal image:</label>
+        <input type="text" id="searchAnimal" name="searchAnimal" />
+        <input type="button" value="Search" />
+
+        <div class="animal-image">
+          <img src="../git/images/panda.jpeg" alt="Tiger Image" />
+          <a href="#">For more tiger info, click here</a>
+        </div>
+      </section>
+
+    
+      <form class="feedback-form" action="">
+        <label style="font-size: 1.5em; font-weight: 400;">Feedback Form:</label>
+        <label for="username">Name:</label>
+        <input type="text" id="username" name="username" />
+
+        <label for="feedbackDate">Date:</label>
+        <input type="date" id="feedbackDate" name="feedbackDate" />
+
+        <label for="comments">Comments:</label>
+        <textarea id="comments" name="comments" rows="4" cols="40"></textarea>
+
+        <input type="submit" value="Submit" />
+      </form>
+    </div>
+  </main>
+</body>
+</html>
