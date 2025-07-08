@@ -1,0 +1,77 @@
+.dvLayout {
+    overflow:hidden
+    }
+
+.hero-section {
+      position: relative;
+      background-image: url('../images/top-tourist-attractions-in-coxs-bazar.jpg');
+      background-size: cover;
+      background-position: center;
+      height: 400px;
+      color: white;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+.hero-text {
+      background-color: rgba(0, 0, 0, 0.5); /* semi-transparent background for readability */
+      padding: 20px;
+      border-radius: 10px;
+      font-size: 2em;
+      text-align: center;
+      font-family: sans-serif;
+    }
+
+.text-center {
+        text-align:center!important}@media (min-width:576px){.text-sm-left{text-align:left!important}
+    }
+
+.intro-text-center{text-align:center}    
+
+body {
+    font-family: Arial, sans-serif; margin: 0; background-color: #f4f4f4;
+}
+
+.section {
+    padding: 40px; 
+    background-color: #fff;
+}
+
+.attraction {
+    display: flex; 
+    flex-wrap: wrap; 
+    align-items: center; 
+    margin-bottom: 40px;
+}
+
+.attraction:nth-child(even) {
+    flex-direction: row-reverse; 
+    background-color: #e9f3f9;
+}
+
+.attraction img {
+    width: 100%; 
+    max-width: 400px; 
+    border-radius: 10px; 
+    margin: 10px;
+}
+
+.attraction-content {
+    flex: 1; 
+    padding: 20px;
+}
+
+h2 {
+    color: #006699;
+}
+
+a {
+    color: #006699; text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;}
+    @media (max-width: 768px) {
+      .attraction {flex-direction: column;}
+}
